@@ -7,50 +7,91 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F121D8E11BF2FEE0063D987 /* MEDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F121D8D11BF2FEE0063D987 /* MEDatabase.m */; };
-		0F121D9111BF2FF30063D987 /* MECollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F121D9011BF2FF30063D987 /* MECollection.m */; };
-		0F20EBFB11F1EB9D004DCB9F /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F20EBE811F1EB9D004DCB9F /* CDataScanner.m */; };
-		0F20EBFC11F1EB9D004DCB9F /* CDataScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F20EBEB11F1EB9D004DCB9F /* CDataScanner_Extensions.m */; };
-		0F20EBFD11F1EB9D004DCB9F /* NSCharacterSet_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F20EBED11F1EB9D004DCB9F /* NSCharacterSet_Extensions.m */; };
-		0F20EBFE11F1EB9D004DCB9F /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F20EBEF11F1EB9D004DCB9F /* NSDictionary_JSONExtensions.m */; };
-		0F20EBFF11F1EB9D004DCB9F /* CJSONDataSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F20EBF211F1EB9D004DCB9F /* CJSONDataSerializer.m */; };
-		0F20EC0011F1EB9D004DCB9F /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F20EBF411F1EB9D004DCB9F /* CJSONDeserializer.m */; };
-		0F20EC0111F1EB9D004DCB9F /* CJSONScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F20EBF611F1EB9D004DCB9F /* CJSONScanner.m */; };
-		0F20EC0211F1EB9D004DCB9F /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F20EBF811F1EB9D004DCB9F /* CJSONSerializer.m */; };
-		0F20EC0311F1EB9D004DCB9F /* CSerializedJSONData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F20EBFA11F1EB9D004DCB9F /* CSerializedJSONData.m */; };
-		0F2E648911E40B3E009EC4DC /* MEArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F2E648811E40B3E009EC4DC /* MEArray.m */; };
 		0F3D80E311EEB6E600F6D44B /* README.textile in Resources */ = {isa = PBXBuildFile; fileRef = 0F3D80E211EEB6E600F6D44B /* README.textile */; };
-		0F4583D411C7B6E600A5C698 /* MEUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4583D311C7B6E600A5C698 /* MEUtils.m */; };
-		0F4583D811C7B6EF00A5C698 /* MEDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4583D711C7B6EF00A5C698 /* MEDocument.m */; };
-		0F96C89111C9930D00A4C1F0 /* HumanSizedNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F96C89011C9930D00A4C1F0 /* HumanSizedNumber.m */; };
-		0F96C89E11C9954B00A4C1F0 /* HumanSizedSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F96C89D11C9954B00A4C1F0 /* HumanSizedSize.m */; };
-		0FBBB07411CD37D9001E48F2 /* MECursor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBBB07311CD37D9001E48F2 /* MECursor.m */; };
-		0FC7B8AA11BB493500ADE4BE /* NewConnectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FC7B8A911BB493500ADE4BE /* NewConnectionController.m */; };
-		0FC7B98711BC190C00ADE4BE /* DatabaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FC7B98611BC190C00ADE4BE /* DatabaseController.m */; };
 		0FC7B9B511BC1B2100ADE4BE /* Database.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FC7B9B411BC1B2100ADE4BE /* Database.xib */; };
-		0FC7B9B711BC1B2800ADE4BE /* Connection.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FC7B9B611BC1B2800ADE4BE /* Connection.xib */; };
-		0FC7BA3E11BC2CA000ADE4BE /* bson.c in Sources */ = {isa = PBXBuildFile; fileRef = 0FC7BA3511BC2CA000ADE4BE /* bson.c */; };
-		0FC7BA3F11BC2CA000ADE4BE /* md5.c in Sources */ = {isa = PBXBuildFile; fileRef = 0FC7BA3711BC2CA000ADE4BE /* md5.c */; };
-		0FC7BA4011BC2CA000ADE4BE /* mongo.c in Sources */ = {isa = PBXBuildFile; fileRef = 0FC7BA3911BC2CA000ADE4BE /* mongo.c */; };
-		0FC7BA4111BC2CA000ADE4BE /* numbers.c in Sources */ = {isa = PBXBuildFile; fileRef = 0FC7BA3C11BC2CA000ADE4BE /* numbers.c */; };
-		0FC7BB5A11BC795A00ADE4BE /* MEConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FC7BB5911BC795A00ADE4BE /* MEConnection.m */; };
-		0FD4A6A511FA195000C9D4F4 /* BWToolkitFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0FD4A6A411FA195000C9D4F4 /* BWToolkitFramework.framework */; };
+		0FD4A6A511FA195000C9D4F4 /* BWToolkitFramework.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 0FD4A6A411FA195000C9D4F4 /* BWToolkitFramework.framework */; };
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
-		256AC3DA0F4B6AC300CF3369 /* Mongo_ExplorerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* Mongo_ExplorerAppDelegate.m */; };
+		60366D3F1273291E00FEF864 /* bson.c in Sources */ = {isa = PBXBuildFile; fileRef = 0FC7BA3511BC2CA000ADE4BE /* bson.c */; };
+		60366D401273291E00FEF864 /* bson.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FC7BA3611BC2CA000ADE4BE /* bson.h */; };
+		60366D411273291F00FEF864 /* md5.c in Sources */ = {isa = PBXBuildFile; fileRef = 0FC7BA3711BC2CA000ADE4BE /* md5.c */; };
+		60366D421273291F00FEF864 /* md5.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FC7BA3811BC2CA000ADE4BE /* md5.h */; };
+		60366D431273292000FEF864 /* mongo.c in Sources */ = {isa = PBXBuildFile; fileRef = 0FC7BA3911BC2CA000ADE4BE /* mongo.c */; };
+		60366D441273292100FEF864 /* mongo.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FC7BA3A11BC2CA000ADE4BE /* mongo.h */; };
+		60366D451273292100FEF864 /* mongo_except.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FC7BA3B11BC2CA000ADE4BE /* mongo_except.h */; };
+		60366D461273292200FEF864 /* numbers.c in Sources */ = {isa = PBXBuildFile; fileRef = 0FC7BA3C11BC2CA000ADE4BE /* numbers.c */; };
+		60366D471273292300FEF864 /* platform_hacks.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FC7BA3D11BC2CA000ADE4BE /* platform_hacks.h */; };
+		60366D481273293C00FEF864 /* MEArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F2E648711E40B3E009EC4DC /* MEArray.h */; };
+		60366D491273293C00FEF864 /* MEArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F2E648811E40B3E009EC4DC /* MEArray.m */; };
+		60366D4A1273293D00FEF864 /* MECollection.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F121D8F11BF2FF30063D987 /* MECollection.h */; };
+		60366D4B1273293E00FEF864 /* MECollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F121D9011BF2FF30063D987 /* MECollection.m */; };
+		60366D4C1273293F00FEF864 /* MEConnection-Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F7FB30011CEFD4D00BFF194 /* MEConnection-Private.h */; };
+		60366D4D1273293F00FEF864 /* MEConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FC7BB5811BC795A00ADE4BE /* MEConnection.h */; };
+		60366D4E1273294000FEF864 /* MEConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FC7BB5911BC795A00ADE4BE /* MEConnection.m */; };
+		60366D4F1273294100FEF864 /* MECursor.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FBBB07211CD37D9001E48F2 /* MECursor.h */; };
+		60366D501273294300FEF864 /* MECursor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBBB07311CD37D9001E48F2 /* MECursor.m */; };
+		60366D511273294400FEF864 /* MEDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F121D8C11BF2FEE0063D987 /* MEDatabase.h */; };
+		60366D521273294400FEF864 /* MEDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F4583D611C7B6EF00A5C698 /* MEDocument.h */; };
+		60366D531273294500FEF864 /* MEDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F121D8D11BF2FEE0063D987 /* MEDatabase.m */; };
+		60366D541273294500FEF864 /* MEDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4583D711C7B6EF00A5C698 /* MEDocument.m */; };
+		60366D551273294600FEF864 /* MEUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F4583D211C7B6E600A5C698 /* MEUtils.h */; };
+		60366D561273294600FEF864 /* MEUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4583D311C7B6E600A5C698 /* MEUtils.m */; };
+		60366D571273296300FEF864 /* DatabaseController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FC7B98511BC190C00ADE4BE /* DatabaseController.h */; };
+		60366D581273296400FEF864 /* DatabaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FC7B98611BC190C00ADE4BE /* DatabaseController.m */; };
+		60366D591273296500FEF864 /* HumanSizedNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F96C88F11C9930D00A4C1F0 /* HumanSizedNumber.h */; };
+		60366D5A1273296600FEF864 /* HumanSizedNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F96C89011C9930D00A4C1F0 /* HumanSizedNumber.m */; };
+		60366D5B1273296600FEF864 /* HumanSizedSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F96C89C11C9954B00A4C1F0 /* HumanSizedSize.h */; };
+		60366D5C1273296700FEF864 /* HumanSizedSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F96C89D11C9954B00A4C1F0 /* HumanSizedSize.m */; };
+		60366D5E1273296800FEF864 /* NewConnectionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FC7B8A811BB493500ADE4BE /* NewConnectionController.h */; };
+		60366D601273296A00FEF864 /* NewConnectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FC7B8A911BB493500ADE4BE /* NewConnectionController.m */; };
+		60366D611273297B00FEF864 /* Mongo_ExplorerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* Mongo_ExplorerAppDelegate.m */; };
+		60366D64127329CA00FEF864 /* Connection.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FC7B9B611BC1B2800ADE4BE /* Connection.xib */; };
+		60366D7912732AF200FEF864 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		60366D8412732B5C00FEF864 /* CDataScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F20EBE711F1EB9D004DCB9F /* CDataScanner.h */; };
+		60366D8512732B5C00FEF864 /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F20EBE811F1EB9D004DCB9F /* CDataScanner.m */; };
+		60366D8612732B5C00FEF864 /* CDataScanner_Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F20EBEA11F1EB9D004DCB9F /* CDataScanner_Extensions.h */; };
+		60366D8712732B5D00FEF864 /* CDataScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F20EBEB11F1EB9D004DCB9F /* CDataScanner_Extensions.m */; };
+		60366D8812732B5E00FEF864 /* CJSONDataSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F20EBF111F1EB9D004DCB9F /* CJSONDataSerializer.h */; };
+		60366D8912732B5E00FEF864 /* CJSONDataSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F20EBF211F1EB9D004DCB9F /* CJSONDataSerializer.m */; };
+		60366D8A12732B5F00FEF864 /* CJSONDeserializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F20EBF311F1EB9D004DCB9F /* CJSONDeserializer.h */; };
+		60366D8B12732B5F00FEF864 /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F20EBF411F1EB9D004DCB9F /* CJSONDeserializer.m */; };
+		60366D8C12732B6200FEF864 /* CJSONScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F20EBF511F1EB9D004DCB9F /* CJSONScanner.h */; };
+		60366D8D12732B6200FEF864 /* CJSONScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F20EBF611F1EB9D004DCB9F /* CJSONScanner.m */; };
+		60366D8E12732B6300FEF864 /* CJSONSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F20EBF711F1EB9D004DCB9F /* CJSONSerializer.h */; };
+		60366D8F12732B6300FEF864 /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F20EBF811F1EB9D004DCB9F /* CJSONSerializer.m */; };
+		60366D9012732B6400FEF864 /* CSerializedJSONData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F20EBFA11F1EB9D004DCB9F /* CSerializedJSONData.m */; };
+		60366D9112732B6400FEF864 /* CSerializedJSONData.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F20EBF911F1EB9D004DCB9F /* CSerializedJSONData.h */; };
+		60366D9212732B6500FEF864 /* NSCharacterSet_Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F20EBEC11F1EB9D004DCB9F /* NSCharacterSet_Extensions.h */; };
+		60366D9312732B6500FEF864 /* NSCharacterSet_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F20EBED11F1EB9D004DCB9F /* NSCharacterSet_Extensions.m */; };
+		60366D9412732B6700FEF864 /* NSDictionary_JSONExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F20EBEE11F1EB9D004DCB9F /* NSDictionary_JSONExtensions.h */; };
+		60366D9512732B6700FEF864 /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F20EBEF11F1EB9D004DCB9F /* NSDictionary_JSONExtensions.m */; };
+		60366DE312732E9800FEF864 /* MongoKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 60366D38127328F300FEF864 /* MongoKit.framework */; };
+		60366DE612732E9C00FEF864 /* MongoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60366D38127328F300FEF864 /* MongoKit.framework */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		60366D3D127328FB00FEF864 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60366D37127328F300FEF864 /* MongoKit */;
+			remoteInfo = MongoKit;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
-		0F95BBA511EF43E500020A06 /* CopyFiles */ = {
+		0F95BBA511EF43E500020A06 /* Copy Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				0FD4A6A511FA195000C9D4F4 /* BWToolkitFramework.framework in CopyFiles */,
+				60366DE312732E9800FEF864 /* MongoKit.framework in Copy Frameworks */,
+				0FD4A6A511FA195000C9D4F4 /* BWToolkitFramework.framework in Copy Frameworks */,
 			);
+			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -120,15 +161,26 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		60366D38127328F300FEF864 /* MongoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MongoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60366D39127328F300FEF864 /* MongoKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MongoKit-Info.plist"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Mongo_Explorer-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Mongo_Explorer-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Mongo Explorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mongo Explorer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		60366D36127328F300FEF864 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60366D7912732AF200FEF864 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8D11072E0486CEB800E47090 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60366DE612732E9C00FEF864 /* MongoKit.framework in Frameworks */,
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,6 +307,7 @@
 			isa = PBXGroup;
 			children = (
 				8D1107320486CEB800E47090 /* Mongo Explorer.app */,
+				60366D38127328F300FEF864 /* MongoKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -271,6 +324,7 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				60366D39127328F300FEF864 /* MongoKit-Info.plist */,
 			);
 			name = "Mongo Explorer";
 			sourceTree = "<group>";
@@ -307,7 +361,61 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		60366D33127328F300FEF864 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60366D401273291E00FEF864 /* bson.h in Headers */,
+				60366D421273291F00FEF864 /* md5.h in Headers */,
+				60366D441273292100FEF864 /* mongo.h in Headers */,
+				60366D451273292100FEF864 /* mongo_except.h in Headers */,
+				60366D471273292300FEF864 /* platform_hacks.h in Headers */,
+				60366D481273293C00FEF864 /* MEArray.h in Headers */,
+				60366D4A1273293D00FEF864 /* MECollection.h in Headers */,
+				60366D4C1273293F00FEF864 /* MEConnection-Private.h in Headers */,
+				60366D4D1273293F00FEF864 /* MEConnection.h in Headers */,
+				60366D4F1273294100FEF864 /* MECursor.h in Headers */,
+				60366D511273294400FEF864 /* MEDatabase.h in Headers */,
+				60366D521273294400FEF864 /* MEDocument.h in Headers */,
+				60366D551273294600FEF864 /* MEUtils.h in Headers */,
+				60366D571273296300FEF864 /* DatabaseController.h in Headers */,
+				60366D591273296500FEF864 /* HumanSizedNumber.h in Headers */,
+				60366D5B1273296600FEF864 /* HumanSizedSize.h in Headers */,
+				60366D5E1273296800FEF864 /* NewConnectionController.h in Headers */,
+				60366D8412732B5C00FEF864 /* CDataScanner.h in Headers */,
+				60366D8612732B5C00FEF864 /* CDataScanner_Extensions.h in Headers */,
+				60366D8812732B5E00FEF864 /* CJSONDataSerializer.h in Headers */,
+				60366D8A12732B5F00FEF864 /* CJSONDeserializer.h in Headers */,
+				60366D8C12732B6200FEF864 /* CJSONScanner.h in Headers */,
+				60366D8E12732B6300FEF864 /* CJSONSerializer.h in Headers */,
+				60366D9112732B6400FEF864 /* CSerializedJSONData.h in Headers */,
+				60366D9212732B6500FEF864 /* NSCharacterSet_Extensions.h in Headers */,
+				60366D9412732B6700FEF864 /* NSDictionary_JSONExtensions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		60366D37127328F300FEF864 /* MongoKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60366D3C127328F400FEF864 /* Build configuration list for PBXNativeTarget "MongoKit" */;
+			buildPhases = (
+				60366D33127328F300FEF864 /* Headers */,
+				60366D34127328F300FEF864 /* Resources */,
+				60366D35127328F300FEF864 /* Sources */,
+				60366D36127328F300FEF864 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MongoKit;
+			productName = MongoKit;
+			productReference = 60366D38127328F300FEF864 /* MongoKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		8D1107260486CEB800E47090 /* Mongo Explorer */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Mongo Explorer" */;
@@ -315,11 +423,12 @@
 				8D1107290486CEB800E47090 /* Resources */,
 				8D11072C0486CEB800E47090 /* Sources */,
 				8D11072E0486CEB800E47090 /* Frameworks */,
-				0F95BBA511EF43E500020A06 /* CopyFiles */,
+				0F95BBA511EF43E500020A06 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				60366D3E127328FB00FEF864 /* PBXTargetDependency */,
 			);
 			name = "Mongo Explorer";
 			productInstallPath = "$(HOME)/Applications";
@@ -340,11 +449,20 @@
 			projectRoot = "";
 			targets = (
 				8D1107260486CEB800E47090 /* Mongo Explorer */,
+				60366D37127328F300FEF864 /* MongoKit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		60366D34127328F300FEF864 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60366D64127329CA00FEF864 /* Connection.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8D1107290486CEB800E47090 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -352,7 +470,6 @@
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
 				0FC7B9B511BC1B2100ADE4BE /* Database.xib in Resources */,
-				0FC7B9B711BC1B2800ADE4BE /* Connection.xib in Resources */,
 				0F3D80E311EEB6E600F6D44B /* README.textile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,40 +477,55 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		60366D35127328F300FEF864 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60366D3F1273291E00FEF864 /* bson.c in Sources */,
+				60366D411273291F00FEF864 /* md5.c in Sources */,
+				60366D431273292000FEF864 /* mongo.c in Sources */,
+				60366D461273292200FEF864 /* numbers.c in Sources */,
+				60366D491273293C00FEF864 /* MEArray.m in Sources */,
+				60366D4B1273293E00FEF864 /* MECollection.m in Sources */,
+				60366D4E1273294000FEF864 /* MEConnection.m in Sources */,
+				60366D501273294300FEF864 /* MECursor.m in Sources */,
+				60366D531273294500FEF864 /* MEDatabase.m in Sources */,
+				60366D541273294500FEF864 /* MEDocument.m in Sources */,
+				60366D561273294600FEF864 /* MEUtils.m in Sources */,
+				60366D581273296400FEF864 /* DatabaseController.m in Sources */,
+				60366D5A1273296600FEF864 /* HumanSizedNumber.m in Sources */,
+				60366D5C1273296700FEF864 /* HumanSizedSize.m in Sources */,
+				60366D601273296A00FEF864 /* NewConnectionController.m in Sources */,
+				60366D8512732B5C00FEF864 /* CDataScanner.m in Sources */,
+				60366D8712732B5D00FEF864 /* CDataScanner_Extensions.m in Sources */,
+				60366D8912732B5E00FEF864 /* CJSONDataSerializer.m in Sources */,
+				60366D8B12732B5F00FEF864 /* CJSONDeserializer.m in Sources */,
+				60366D8D12732B6200FEF864 /* CJSONScanner.m in Sources */,
+				60366D8F12732B6300FEF864 /* CJSONSerializer.m in Sources */,
+				60366D9012732B6400FEF864 /* CSerializedJSONData.m in Sources */,
+				60366D9312732B6500FEF864 /* NSCharacterSet_Extensions.m in Sources */,
+				60366D9512732B6700FEF864 /* NSDictionary_JSONExtensions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8D11072C0486CEB800E47090 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
-				256AC3DA0F4B6AC300CF3369 /* Mongo_ExplorerAppDelegate.m in Sources */,
-				0FC7B8AA11BB493500ADE4BE /* NewConnectionController.m in Sources */,
-				0FC7B98711BC190C00ADE4BE /* DatabaseController.m in Sources */,
-				0FC7BA3E11BC2CA000ADE4BE /* bson.c in Sources */,
-				0FC7BA3F11BC2CA000ADE4BE /* md5.c in Sources */,
-				0FC7BA4011BC2CA000ADE4BE /* mongo.c in Sources */,
-				0FC7BA4111BC2CA000ADE4BE /* numbers.c in Sources */,
-				0FC7BB5A11BC795A00ADE4BE /* MEConnection.m in Sources */,
-				0F121D8E11BF2FEE0063D987 /* MEDatabase.m in Sources */,
-				0F121D9111BF2FF30063D987 /* MECollection.m in Sources */,
-				0F4583D411C7B6E600A5C698 /* MEUtils.m in Sources */,
-				0F4583D811C7B6EF00A5C698 /* MEDocument.m in Sources */,
-				0F96C89111C9930D00A4C1F0 /* HumanSizedNumber.m in Sources */,
-				0F96C89E11C9954B00A4C1F0 /* HumanSizedSize.m in Sources */,
-				0FBBB07411CD37D9001E48F2 /* MECursor.m in Sources */,
-				0F2E648911E40B3E009EC4DC /* MEArray.m in Sources */,
-				0F20EBFB11F1EB9D004DCB9F /* CDataScanner.m in Sources */,
-				0F20EBFC11F1EB9D004DCB9F /* CDataScanner_Extensions.m in Sources */,
-				0F20EBFD11F1EB9D004DCB9F /* NSCharacterSet_Extensions.m in Sources */,
-				0F20EBFE11F1EB9D004DCB9F /* NSDictionary_JSONExtensions.m in Sources */,
-				0F20EBFF11F1EB9D004DCB9F /* CJSONDataSerializer.m in Sources */,
-				0F20EC0011F1EB9D004DCB9F /* CJSONDeserializer.m in Sources */,
-				0F20EC0111F1EB9D004DCB9F /* CJSONScanner.m in Sources */,
-				0F20EC0211F1EB9D004DCB9F /* CJSONSerializer.m in Sources */,
-				0F20EC0311F1EB9D004DCB9F /* CSerializedJSONData.m in Sources */,
+				60366D611273297B00FEF864 /* Mongo_ExplorerAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		60366D3E127328FB00FEF864 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 60366D37127328F300FEF864 /* MongoKit */;
+			targetProxy = 60366D3D127328FB00FEF864 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
@@ -431,6 +563,64 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		60366D3A127328F400FEF864 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_SYMBOL_SEPARATION = YES;
+				GCC_INPUT_FILETYPE = sourcecode.c.objc;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "MongoKit-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				PRODUCT_NAME = MongoKit;
+			};
+			name = Debug;
+		};
+		60366D3B127328F400FEF864 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_INPUT_FILETYPE = sourcecode.c.objc;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "MongoKit-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = MongoKit;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 		C01FCF4B08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -507,6 +697,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		60366D3C127328F400FEF864 /* Build configuration list for PBXNativeTarget "MongoKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60366D3A127328F400FEF864 /* Debug */,
+				60366D3B127328F400FEF864 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Mongo Explorer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
