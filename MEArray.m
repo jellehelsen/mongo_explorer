@@ -59,7 +59,7 @@
                    withObjectsFromArray:docs];
 
     CFBitVectorSetBits(loadedDocuments, CFRangeMake(index, [docs count]), 1);
-    NSAssert(CFBitVectorGetBitAtIndex(loadedDocuments, index) == 1, "Didn't set to expected value");
+    NSAssert(CFBitVectorGetBitAtIndex(loadedDocuments, index) == 1, @"Didn't set to expected value");
   }
 
   return [backingStore objectAtIndex:index];

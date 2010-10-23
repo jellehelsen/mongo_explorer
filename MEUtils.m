@@ -100,7 +100,7 @@
     } else if ([obj isKindOfClass:[NSArray class]]) {
       bson_append_start_array(buffer, cKey);
       for(id entity in obj) {
-        NSAssert(NO, "Arrays aren't handled just yet...");
+        NSAssert(NO, @"Arrays aren't handled just yet...");
       }
       bson_append_finish_object(buffer);
     } else if ([obj isKindOfClass:[NSDictionary class]]) {
@@ -108,7 +108,7 @@
       [MEUtils fillBsonObject:buffer fromDictionary:obj];
       bson_append_finish_object(buffer);
     } else {
-      NSAssert1(NO, "Unexpected class: %@ is not handled", [obj class]);
+      NSAssert1(NO, @"Unexpected class: %@ is not handled", [obj class]);
     }
   }
 }
